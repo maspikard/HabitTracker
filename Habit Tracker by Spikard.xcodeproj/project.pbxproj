@@ -1,0 +1,557 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		42385D192304465A0037E92F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42385D182304465A0037E92F /* AppDelegate.swift */; };
+		42385D1B2304465A0037E92F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42385D1A2304465A0037E92F /* MainViewController.swift */; };
+		42385D202304465B0037E92F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42385D1F2304465B0037E92F /* Assets.xcassets */; };
+		42385D232304465B0037E92F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42385D212304465B0037E92F /* LaunchScreen.storyboard */; };
+		42385D2D23048B2E0037E92F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42385D2C23048B2E0037E92F /* Main.storyboard */; };
+		42385D3123048CD80037E92F /* HabitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42385D3023048CD80037E92F /* HabitView.swift */; };
+		42385D3323048DB30037E92F /* NibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42385D3223048DB30037E92F /* NibView.swift */; };
+		42385D3523048DD50037E92F /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42385D3423048DD50037E92F /* View.swift */; };
+		42385D3723048E870037E92F /* HabitView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42385D3623048E870037E92F /* HabitView.xib */; };
+		42385D3D230496930037E92F /* Habit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42385D3C230496930037E92F /* Habit.swift */; };
+		427783CE231A663400FC022A /* HabitCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427783CD231A663400FC022A /* HabitCollectionViewCell.swift */; };
+		427783D0231A69F000FC022A /* UICollectionViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427783CF231A69F000FC022A /* UICollectionViewExtension.swift */; };
+		427783D2231A6EE600FC022A /* ColumnsFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427783D1231A6EE600FC022A /* ColumnsFlowLayout.swift */; };
+		427783D4231A70FE00FC022A /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427783D3231A70FE00FC022A /* UIView.swift */; };
+		427783D6231A9D1700FC022A /* LovelyCircularProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427783D5231A9D1700FC022A /* LovelyCircularProgress.swift */; };
+		427783D8231BA54200FC022A /* UIBezierPathExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427783D7231BA54200FC022A /* UIBezierPathExtension.swift */; };
+		42D4A23E2312BD5B009DB988 /* ArrayDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D4A23D2312BD5B009DB988 /* ArrayDataSource.swift */; };
+		42D923DB23157C7E002197DA /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D923DA23157C7E002197DA /* DateExtension.swift */; };
+		42D923DF2315A594002197DA /* FontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D923DE2315A594002197DA /* FontExtension.swift */; };
+		42D923EE2315A6DB002197DA /* SF-Pro-Text-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 42D923E12315A6DA002197DA /* SF-Pro-Text-Semibold.otf */; };
+		42D923EF2315A6DB002197DA /* SF-Pro-Display-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 42D923E22315A6DA002197DA /* SF-Pro-Display-Light.otf */; };
+		42D923F12315A6DB002197DA /* SF-Pro-Text-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 42D923E42315A6DA002197DA /* SF-Pro-Text-Bold.otf */; };
+		42D923F22315A6DB002197DA /* SF-Pro-Display-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 42D923E52315A6DA002197DA /* SF-Pro-Display-Regular.otf */; };
+		42D923F32315A6DB002197DA /* SF-Pro-Display-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 42D923E62315A6DA002197DA /* SF-Pro-Display-Semibold.otf */; };
+		42D923F42315A6DB002197DA /* SF-Pro-Text-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 42D923E72315A6DA002197DA /* SF-Pro-Text-Light.otf */; };
+		42D923F52315A6DB002197DA /* SF-Pro-Text-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 42D923E82315A6DA002197DA /* SF-Pro-Text-Regular.otf */; };
+		42D923F62315A6DB002197DA /* SF-Pro-Text-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 42D923E92315A6DA002197DA /* SF-Pro-Text-Medium.otf */; };
+		42D923F92315A6DB002197DA /* SF-Pro-Display-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 42D923EC2315A6DB002197DA /* SF-Pro-Display-Medium.otf */; };
+		42D923FA2315A6DB002197DA /* SF-Pro-Display-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 42D923ED2315A6DB002197DA /* SF-Pro-Display-Bold.otf */; };
+		42D923FE2315B6C1002197DA /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D923FD2315B6C1002197DA /* UIColorExtension.swift */; };
+		E2589FD7D70D23A6D5500C04 /* Pods_Habit_Tracker_by_Spikard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4535151F5610367AF21F1C34 /* Pods_Habit_Tracker_by_Spikard.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		42385D152304465A0037E92F /* Habit Tracker by Spikard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Habit Tracker by Spikard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		42385D182304465A0037E92F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		42385D1A2304465A0037E92F /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		42385D1F2304465B0037E92F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		42385D222304465B0037E92F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		42385D242304465B0037E92F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42385D2C23048B2E0037E92F /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		42385D3023048CD80037E92F /* HabitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitView.swift; sourceTree = "<group>"; };
+		42385D3223048DB30037E92F /* NibView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibView.swift; sourceTree = "<group>"; };
+		42385D3423048DD50037E92F /* View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		42385D3623048E870037E92F /* HabitView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HabitView.xib; sourceTree = "<group>"; };
+		42385D3C230496930037E92F /* Habit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Habit.swift; sourceTree = "<group>"; };
+		427783CD231A663400FC022A /* HabitCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitCollectionViewCell.swift; sourceTree = "<group>"; };
+		427783CF231A69F000FC022A /* UICollectionViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewExtension.swift; sourceTree = "<group>"; };
+		427783D1231A6EE600FC022A /* ColumnsFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColumnsFlowLayout.swift; sourceTree = "<group>"; };
+		427783D3231A70FE00FC022A /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		427783D5231A9D1700FC022A /* LovelyCircularProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LovelyCircularProgress.swift; sourceTree = "<group>"; };
+		427783D7231BA54200FC022A /* UIBezierPathExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIBezierPathExtension.swift; sourceTree = "<group>"; };
+		42D4A23D2312BD5B009DB988 /* ArrayDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayDataSource.swift; sourceTree = "<group>"; };
+		42D923DA23157C7E002197DA /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		42D923DE2315A594002197DA /* FontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontExtension.swift; sourceTree = "<group>"; };
+		42D923E12315A6DA002197DA /* SF-Pro-Text-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Semibold.otf"; sourceTree = "<group>"; };
+		42D923E22315A6DA002197DA /* SF-Pro-Display-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Light.otf"; sourceTree = "<group>"; };
+		42D923E42315A6DA002197DA /* SF-Pro-Text-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Bold.otf"; sourceTree = "<group>"; };
+		42D923E52315A6DA002197DA /* SF-Pro-Display-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Regular.otf"; sourceTree = "<group>"; };
+		42D923E62315A6DA002197DA /* SF-Pro-Display-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Semibold.otf"; sourceTree = "<group>"; };
+		42D923E72315A6DA002197DA /* SF-Pro-Text-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Light.otf"; sourceTree = "<group>"; };
+		42D923E82315A6DA002197DA /* SF-Pro-Text-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Regular.otf"; sourceTree = "<group>"; };
+		42D923E92315A6DA002197DA /* SF-Pro-Text-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Medium.otf"; sourceTree = "<group>"; };
+		42D923EC2315A6DB002197DA /* SF-Pro-Display-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Medium.otf"; sourceTree = "<group>"; };
+		42D923ED2315A6DB002197DA /* SF-Pro-Display-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Bold.otf"; sourceTree = "<group>"; };
+		42D923FD2315B6C1002197DA /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		4535151F5610367AF21F1C34 /* Pods_Habit_Tracker_by_Spikard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Habit_Tracker_by_Spikard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F288389DC2C4FD862E9ABDB /* Pods-Habit Tracker by Spikard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Habit Tracker by Spikard.debug.xcconfig"; path = "Target Support Files/Pods-Habit Tracker by Spikard/Pods-Habit Tracker by Spikard.debug.xcconfig"; sourceTree = "<group>"; };
+		63C7B611D2435BA635520342 /* Pods-Habit Tracker by Spikard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Habit Tracker by Spikard.release.xcconfig"; path = "Target Support Files/Pods-Habit Tracker by Spikard/Pods-Habit Tracker by Spikard.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		42385D122304465A0037E92F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2589FD7D70D23A6D5500C04 /* Pods_Habit_Tracker_by_Spikard.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		42385D0C2304465A0037E92F = {
+			isa = PBXGroup;
+			children = (
+				42385D172304465A0037E92F /* Habit Tracker by Spikard */,
+				42385D162304465A0037E92F /* Products */,
+				B6C0E471C037455FF366F042 /* Pods */,
+				DBBA62EA026CC5EEBCDC35FB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		42385D162304465A0037E92F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				42385D152304465A0037E92F /* Habit Tracker by Spikard.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		42385D172304465A0037E92F /* Habit Tracker by Spikard */ = {
+			isa = PBXGroup;
+			children = (
+				42385D182304465A0037E92F /* AppDelegate.swift */,
+				42D923D923157C6D002197DA /* Extensions */,
+				42D923FB2315AA62002197DA /* Classes */,
+				42385D2F23048CC20037E92F /* Views */,
+				42385D2A230489F70037E92F /* Modules */,
+				42385D3B2304968B0037E92F /* Models */,
+				42385D2E23048B3B0037E92F /* Resources */,
+			);
+			path = "Habit Tracker by Spikard";
+			sourceTree = "<group>";
+		};
+		42385D2A230489F70037E92F /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				42385D2B23048A460037E92F /* Main */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		42385D2B23048A460037E92F /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				42D4A23D2312BD5B009DB988 /* ArrayDataSource.swift */,
+				42385D1A2304465A0037E92F /* MainViewController.swift */,
+				42385D2C23048B2E0037E92F /* Main.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		42385D2E23048B3B0037E92F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				42D923E02315A6CE002197DA /* Fonts */,
+				42385D1F2304465B0037E92F /* Assets.xcassets */,
+				42385D212304465B0037E92F /* LaunchScreen.storyboard */,
+				42385D242304465B0037E92F /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		42385D2F23048CC20037E92F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				42385D3423048DD50037E92F /* View.swift */,
+				42385D3223048DB30037E92F /* NibView.swift */,
+				42385D3023048CD80037E92F /* HabitView.swift */,
+				42385D3623048E870037E92F /* HabitView.xib */,
+				427783D5231A9D1700FC022A /* LovelyCircularProgress.swift */,
+				42385D38230496030037E92F /* Cells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		42385D38230496030037E92F /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				427783CD231A663400FC022A /* HabitCollectionViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		42385D3B2304968B0037E92F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				42385D3C230496930037E92F /* Habit.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		42D923D923157C6D002197DA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				427783D3231A70FE00FC022A /* UIView.swift */,
+				42D923DA23157C7E002197DA /* DateExtension.swift */,
+				42D923DE2315A594002197DA /* FontExtension.swift */,
+				42D923FD2315B6C1002197DA /* UIColorExtension.swift */,
+				427783CF231A69F000FC022A /* UICollectionViewExtension.swift */,
+				427783D7231BA54200FC022A /* UIBezierPathExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		42D923E02315A6CE002197DA /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				42D923ED2315A6DB002197DA /* SF-Pro-Display-Bold.otf */,
+				42D923E22315A6DA002197DA /* SF-Pro-Display-Light.otf */,
+				42D923EC2315A6DB002197DA /* SF-Pro-Display-Medium.otf */,
+				42D923E52315A6DA002197DA /* SF-Pro-Display-Regular.otf */,
+				42D923E62315A6DA002197DA /* SF-Pro-Display-Semibold.otf */,
+				42D923E42315A6DA002197DA /* SF-Pro-Text-Bold.otf */,
+				42D923E72315A6DA002197DA /* SF-Pro-Text-Light.otf */,
+				42D923E92315A6DA002197DA /* SF-Pro-Text-Medium.otf */,
+				42D923E82315A6DA002197DA /* SF-Pro-Text-Regular.otf */,
+				42D923E12315A6DA002197DA /* SF-Pro-Text-Semibold.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		42D923FB2315AA62002197DA /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				427783D1231A6EE600FC022A /* ColumnsFlowLayout.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		B6C0E471C037455FF366F042 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4F288389DC2C4FD862E9ABDB /* Pods-Habit Tracker by Spikard.debug.xcconfig */,
+				63C7B611D2435BA635520342 /* Pods-Habit Tracker by Spikard.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DBBA62EA026CC5EEBCDC35FB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4535151F5610367AF21F1C34 /* Pods_Habit_Tracker_by_Spikard.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		42385D142304465A0037E92F /* Habit Tracker by Spikard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42385D272304465B0037E92F /* Build configuration list for PBXNativeTarget "Habit Tracker by Spikard" */;
+			buildPhases = (
+				B01D8F90B8F1B0A24C95C64B /* [CP] Check Pods Manifest.lock */,
+				42385D112304465A0037E92F /* Sources */,
+				42385D122304465A0037E92F /* Frameworks */,
+				42385D132304465A0037E92F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Habit Tracker by Spikard";
+			productName = "Habit Tracker by Spikard";
+			productReference = 42385D152304465A0037E92F /* Habit Tracker by Spikard.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		42385D0D2304465A0037E92F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = Spikard;
+				TargetAttributes = {
+					42385D142304465A0037E92F = {
+						CreatedOnToolsVersion = 10.3;
+					};
+				};
+			};
+			buildConfigurationList = 42385D102304465A0037E92F /* Build configuration list for PBXProject "Habit Tracker by Spikard" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 42385D0C2304465A0037E92F;
+			productRefGroup = 42385D162304465A0037E92F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				42385D142304465A0037E92F /* Habit Tracker by Spikard */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		42385D132304465A0037E92F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42D923EF2315A6DB002197DA /* SF-Pro-Display-Light.otf in Resources */,
+				42D923EE2315A6DB002197DA /* SF-Pro-Text-Semibold.otf in Resources */,
+				42D923FA2315A6DB002197DA /* SF-Pro-Display-Bold.otf in Resources */,
+				42D923F42315A6DB002197DA /* SF-Pro-Text-Light.otf in Resources */,
+				42385D232304465B0037E92F /* LaunchScreen.storyboard in Resources */,
+				42385D3723048E870037E92F /* HabitView.xib in Resources */,
+				42385D202304465B0037E92F /* Assets.xcassets in Resources */,
+				42385D2D23048B2E0037E92F /* Main.storyboard in Resources */,
+				42D923F52315A6DB002197DA /* SF-Pro-Text-Regular.otf in Resources */,
+				42D923F22315A6DB002197DA /* SF-Pro-Display-Regular.otf in Resources */,
+				42D923F32315A6DB002197DA /* SF-Pro-Display-Semibold.otf in Resources */,
+				42D923F62315A6DB002197DA /* SF-Pro-Text-Medium.otf in Resources */,
+				42D923F12315A6DB002197DA /* SF-Pro-Text-Bold.otf in Resources */,
+				42D923F92315A6DB002197DA /* SF-Pro-Display-Medium.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B01D8F90B8F1B0A24C95C64B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Habit Tracker by Spikard-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		42385D112304465A0037E92F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42385D3323048DB30037E92F /* NibView.swift in Sources */,
+				42D923FE2315B6C1002197DA /* UIColorExtension.swift in Sources */,
+				42385D3123048CD80037E92F /* HabitView.swift in Sources */,
+				427783D2231A6EE600FC022A /* ColumnsFlowLayout.swift in Sources */,
+				427783D0231A69F000FC022A /* UICollectionViewExtension.swift in Sources */,
+				42D4A23E2312BD5B009DB988 /* ArrayDataSource.swift in Sources */,
+				42385D3523048DD50037E92F /* View.swift in Sources */,
+				42D923DB23157C7E002197DA /* DateExtension.swift in Sources */,
+				427783D6231A9D1700FC022A /* LovelyCircularProgress.swift in Sources */,
+				42385D3D230496930037E92F /* Habit.swift in Sources */,
+				42385D1B2304465A0037E92F /* MainViewController.swift in Sources */,
+				427783D4231A70FE00FC022A /* UIView.swift in Sources */,
+				42D923DF2315A594002197DA /* FontExtension.swift in Sources */,
+				42385D192304465A0037E92F /* AppDelegate.swift in Sources */,
+				427783CE231A663400FC022A /* HabitCollectionViewCell.swift in Sources */,
+				427783D8231BA54200FC022A /* UIBezierPathExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		42385D212304465B0037E92F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				42385D222304465B0037E92F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		42385D252304465B0037E92F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		42385D262304465B0037E92F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		42385D282304465B0037E92F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F288389DC2C4FD862E9ABDB /* Pods-Habit Tracker by Spikard.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8Q4KTDMYNZ;
+				INFOPLIST_FILE = "$(SRCROOT)/Habit Tracker by Spikard/Resources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.spikard.habit-tracker.Habit-Tracker-by-Spikard";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		42385D292304465B0037E92F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63C7B611D2435BA635520342 /* Pods-Habit Tracker by Spikard.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8Q4KTDMYNZ;
+				INFOPLIST_FILE = "$(SRCROOT)/Habit Tracker by Spikard/Resources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.spikard.habit-tracker.Habit-Tracker-by-Spikard";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		42385D102304465A0037E92F /* Build configuration list for PBXProject "Habit Tracker by Spikard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42385D252304465B0037E92F /* Debug */,
+				42385D262304465B0037E92F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42385D272304465B0037E92F /* Build configuration list for PBXNativeTarget "Habit Tracker by Spikard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42385D282304465B0037E92F /* Debug */,
+				42385D292304465B0037E92F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 42385D0D2304465A0037E92F /* Project object */;
+}

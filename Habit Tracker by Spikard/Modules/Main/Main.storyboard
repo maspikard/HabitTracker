@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XoA-0b-OKd">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Habits-->
+        <scene sceneID="DRs-eu-fUW">
+            <objects>
+                <viewController storyboardIdentifier="MainViewController" id="XoA-0b-OKd" customClass="MainViewController" customModule="Habit_Tracker_by_Spikard" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3zJ-Ta-PYM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="RYT-2R-y7O">
+                                <rect key="frame" x="0.0" y="44" width="375" height="734"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="oOc-sV-jqD">
+                                    <size key="itemSize" width="140" height="185"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HabitCollectionViewCell" id="cGg-NE-Bhy" customClass="HabitCollectionViewCell" customModule="Habit_Tracker_by_Spikard" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="140" height="185"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="140" height="185"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qRA-gz-W7R" customClass="HabitView" customModule="Habit_Tracker_by_Spikard" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="140" height="185"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="12"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                                            <size key="value" width="0.0" height="2"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                            <real key="value" value="0.12"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                            <real key="value" value="5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="qRA-gz-W7R" firstAttribute="leading" secondItem="cGg-NE-Bhy" secondAttribute="leading" id="G3L-nv-SxH"/>
+                                            <constraint firstAttribute="bottom" secondItem="qRA-gz-W7R" secondAttribute="bottom" id="Qwz-YF-6Er"/>
+                                            <constraint firstItem="qRA-gz-W7R" firstAttribute="top" secondItem="cGg-NE-Bhy" secondAttribute="top" id="eLs-hw-lTA"/>
+                                            <constraint firstAttribute="trailing" secondItem="qRA-gz-W7R" secondAttribute="trailing" id="pkp-k3-yWY"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="habitView" destination="qRA-gz-W7R" id="J1Y-6L-Qby"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="XoA-0b-OKd" id="DZc-ja-un6"/>
+                                    <outlet property="delegate" destination="XoA-0b-OKd" id="1Jd-fh-9Eb"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="RYT-2R-y7O" firstAttribute="top" secondItem="19U-rN-bJN" secondAttribute="top" id="8CN-BG-97S"/>
+                            <constraint firstItem="19U-rN-bJN" firstAttribute="trailing" secondItem="RYT-2R-y7O" secondAttribute="trailing" id="8a4-g2-5KC"/>
+                            <constraint firstItem="19U-rN-bJN" firstAttribute="bottom" secondItem="RYT-2R-y7O" secondAttribute="bottom" id="CqN-WS-arS"/>
+                            <constraint firstItem="RYT-2R-y7O" firstAttribute="leading" secondItem="19U-rN-bJN" secondAttribute="leading" id="bBm-vy-2tv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="19U-rN-bJN"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Habits" id="0O5-GC-czK">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="HMR-XL-Awp"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="collectionView" destination="RYT-2R-y7O" id="QUE-5q-T9a"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YxR-Xy-TSV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="904.79999999999995" y="-124.13793103448276"/>
+        </scene>
+    </scenes>
+</document>
