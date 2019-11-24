@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XoA-0b-OKd">
-    <device id="retina5_9" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="egq-my-7sR">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,66 +17,43 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="RYT-2R-y7O">
-                                <rect key="frame" x="0.0" y="44" width="375" height="734"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="70" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hny-4Y-HjM">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="778"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="oOc-sV-jqD">
-                                    <size key="itemSize" width="140" height="185"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HabitCollectionViewCell" id="cGg-NE-Bhy" customClass="HabitCollectionViewCell" customModule="Habit_Tracker_by_Spikard" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="140" height="185"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="140" height="185"/>
+                                <view key="tableHeaderView" contentMode="scaleToFill" id="VaS-xa-nz9">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="8"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </view>
+                                <view key="tableFooterView" contentMode="scaleToFill" id="u25-Lq-TPK">
+                                    <rect key="frame" x="0.0" y="108" width="375" height="8"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </view>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="QrE-go-mvO">
+                                        <rect key="frame" x="0.0" y="36" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="QrE-go-mvO" id="yxb-b3-LPM">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qRA-gz-W7R" customClass="HabitView" customModule="Habit_Tracker_by_Spikard" customModuleProvider="target">
-                                                    <rect key="frame" x="0.0" y="0.0" width="140" height="185"/>
-                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <userDefinedRuntimeAttributes>
-                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                            <real key="value" value="12"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                        <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
-                                                            <size key="value" width="0.0" height="2"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
-                                                            <real key="value" value="0.12"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                        <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
-                                                            <real key="value" value="5"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                    </userDefinedRuntimeAttributes>
-                                                </view>
-                                            </subviews>
-                                        </view>
-                                        <constraints>
-                                            <constraint firstItem="qRA-gz-W7R" firstAttribute="leading" secondItem="cGg-NE-Bhy" secondAttribute="leading" id="G3L-nv-SxH"/>
-                                            <constraint firstAttribute="bottom" secondItem="qRA-gz-W7R" secondAttribute="bottom" id="Qwz-YF-6Er"/>
-                                            <constraint firstItem="qRA-gz-W7R" firstAttribute="top" secondItem="cGg-NE-Bhy" secondAttribute="top" id="eLs-hw-lTA"/>
-                                            <constraint firstAttribute="trailing" secondItem="qRA-gz-W7R" secondAttribute="trailing" id="pkp-k3-yWY"/>
-                                        </constraints>
-                                        <connections>
-                                            <outlet property="habitView" destination="qRA-gz-W7R" id="J1Y-6L-Qby"/>
-                                        </connections>
-                                    </collectionViewCell>
-                                </cells>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableViewCell>
+                                </prototypes>
                                 <connections>
-                                    <outlet property="dataSource" destination="XoA-0b-OKd" id="DZc-ja-un6"/>
-                                    <outlet property="delegate" destination="XoA-0b-OKd" id="1Jd-fh-9Eb"/>
+                                    <outlet property="dataSource" destination="XoA-0b-OKd" id="L9p-EJ-G6v"/>
+                                    <outlet property="delegate" destination="XoA-0b-OKd" id="HNq-jf-pog"/>
                                 </connections>
-                            </collectionView>
+                            </tableView>
                         </subviews>
-                        <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" name="MainBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="RYT-2R-y7O" firstAttribute="top" secondItem="19U-rN-bJN" secondAttribute="top" id="8CN-BG-97S"/>
-                            <constraint firstItem="19U-rN-bJN" firstAttribute="trailing" secondItem="RYT-2R-y7O" secondAttribute="trailing" id="8a4-g2-5KC"/>
-                            <constraint firstItem="19U-rN-bJN" firstAttribute="bottom" secondItem="RYT-2R-y7O" secondAttribute="bottom" id="CqN-WS-arS"/>
-                            <constraint firstItem="RYT-2R-y7O" firstAttribute="leading" secondItem="19U-rN-bJN" secondAttribute="leading" id="bBm-vy-2tv"/>
+                            <constraint firstItem="19U-rN-bJN" firstAttribute="trailing" secondItem="hny-4Y-HjM" secondAttribute="trailing" id="3qs-EF-dpG"/>
+                            <constraint firstItem="hny-4Y-HjM" firstAttribute="top" secondItem="3zJ-Ta-PYM" secondAttribute="top" id="GQk-fj-UZa"/>
+                            <constraint firstItem="hny-4Y-HjM" firstAttribute="leading" secondItem="19U-rN-bJN" secondAttribute="leading" id="RDS-bh-jR8"/>
+                            <constraint firstItem="19U-rN-bJN" firstAttribute="bottom" secondItem="hny-4Y-HjM" secondAttribute="bottom" id="iZK-1k-NeC"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="19U-rN-bJN"/>
                     </view>
@@ -85,12 +61,36 @@
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="HMR-XL-Awp"/>
                     </navigationItem>
                     <connections>
-                        <outlet property="collectionView" destination="RYT-2R-y7O" id="QUE-5q-T9a"/>
+                        <outlet property="tableView" destination="hny-4Y-HjM" id="OaO-Fj-TaO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YxR-Xy-TSV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1670" y="-124"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="DHy-FR-mbO">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="egq-my-7sR" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="oW4-qY-iZ9">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" name="MainBackgroundColor"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="XoA-0b-OKd" kind="relationship" relationship="rootViewController" id="gdh-FP-V91"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uIf-jG-BdQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
             <point key="canvasLocation" x="904.79999999999995" y="-124.13793103448276"/>
         </scene>
     </scenes>
+    <resources>
+        <namedColor name="MainBackgroundColor">
+            <color red="0.94901960784313721" green="0.95686274509803926" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>

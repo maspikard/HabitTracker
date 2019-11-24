@@ -19,9 +19,6 @@ enum FontWeight: String {
 
 extension UIFont {
     
-    static let dayOfWeekFont = SFProText(size: 14, weight: .regular)
-    static let dayFont = SFProText(size: 13)
-    
     static func SFProDisplay(size: CGFloat, weight: FontWeight = .regular) -> UIFont {
         
         return UIFont(name: "SFProDisplay-" + weight.rawValue, size: size)!

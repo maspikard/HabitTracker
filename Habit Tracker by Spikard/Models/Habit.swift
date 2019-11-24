@@ -6,8 +6,21 @@
 //  Copyright © 2019 Spikard. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
-final class Habit {
+class Habit {
     
+    var progress: CGFloat = 0.0
+    
+    init(progress: CGFloat) {
+        self.progress = progress
+    }
+    
+    var progressDiff: CGFloat {
+        return 0.05
+    }
+    
+    func updateProgress(test: Bool) {
+        progress += progressDiff
+    }
 }

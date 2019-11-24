@@ -1,12 +1,11 @@
 //
-//  Lotteries.swift
-
+//  UIViewExtension.swift
+//  Habit Tracker by Spikard
 //
-//  Created by Dmitry Smirnov on 26.03.2018.
-//  Copyright © 2018 MobileUp LLC. All rights reserved.
+//  Created by maxial on 27/08/2019.
+//  Copyright © 2019 Spikard. All rights reserved.
 //
 
-import Foundation
 import UIKit
 
 @IBDesignable
@@ -50,5 +49,36 @@ extension UIView {
     @IBInspectable var rotate: CGFloat {
         set { transform = CGAffineTransform(rotationAngle: newValue * .pi/180) }
         get { return 0 }
+    }
+    
+    func findConstraint(type: NSLayoutConstraint.Attribute) -> NSLayoutConstraint? {
+        if let constraint = findConstraintInSuperview(type: type) {
+            return constraint
+        }
+        
+        for constraint in constraints {
+            if constraint.firstAttribute == type && constraint.isActive {
+                return constraint
+            }
+        }
+        
+        return nil
+    }
+    
+    func findConstraintInSuperview(type: NSLayoutConstraint.Attribute) -> NSLayoutConstraint? {
+        if let superview = superview {
+            for constraint in superview.constraints {
+                
+                let isFirstItemIsSelf = (constraint.firstItem as? UIView) == self
+                let isSecondItemIsSelf = (constraint.secondItem as? UIView) == self
+                let isConstraintAssociatedWithSelf = (isFirstItemIsSelf || isSecondItemIsSelf)
+                
+                if constraint.firstAttribute == type && isConstraintAssociatedWithSelf {
+                    return constraint
+                }
+            }
+        }
+        
+        return nil
     }
 }

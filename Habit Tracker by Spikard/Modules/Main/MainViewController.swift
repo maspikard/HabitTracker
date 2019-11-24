@@ -8,39 +8,54 @@
 
 import UIKit
 
+// MARK: - MainViewController
+
 final class MainViewController: UIViewController {
     
     // MARK: - Private properties
 
-    @IBOutlet private weak var collectionView: UICollectionView! {
+    @IBOutlet private weak var tableView: UITableView! {
         didSet {
-            collectionView.collectionViewLayout = ColumnsFlowLayout(numberOfColumns: numberOfColumns, aspectRatio: 14/18, minimumInteritemSpacing: 24, minimumLineSpacing: 24, sectionInset: UIEdgeInsets(top: 0, left: 24, bottom: 0, right: 24))
+            tableView.registerNib(of: HabitTableViewCell.self)
         }
-    }
-    
-    private var numberOfColumns: Int {
-        return Int(UIScreen.main.bounds.width / 130)
     }
     
     // MARK: - Public methods
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.navigationBar.prefersLargeTitles = true
     }
+    
+    // MARK: - Private methods
+    
+    
 }
 
-// MARK: - UICollectionViewDataSource
+// MARK: - UITableViewDataSource
 
-extension MainViewController: UICollectionViewDataSource {
+extension MainViewController: UITableViewDataSource {
     
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
     }
     
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell: HabitCollectionViewCell = collectionView.dequeueReusableCell(for: indexPath)
-        cell.setup(with: Habit())
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 12
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell: HabitTableViewCell = tableView.dequeueReusableCell(for: indexPath)
+        cell.setup(with: Habit(progress: CGFloat(Float(arc4random()) / Float(UINT32_MAX))))
         return cell
     }
 }
 
+// MARK: - UITableViewDelegate
+
+extension MainViewController: UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+    }
+}

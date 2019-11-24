@@ -1,9 +1,9 @@
 //
 //  NibView.swift
-//  ScienceApp
+//  Habit Tracker by Spikard
 //
-//  Created by Maxim Aliev on 22/09/2018.
-//  Copyright © 2018 maxial. All rights reserved.
+//  Created by maxial on 27/08/2019.
+//  Copyright © 2019 Spikard. All rights reserved.
 //
 
 import UIKit
