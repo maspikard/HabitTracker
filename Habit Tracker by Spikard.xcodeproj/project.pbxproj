@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		4208B98E23893D46009D91FE /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4208B98D23893D46009D91FE /* UITableViewExtension.swift */; };
 		4208B99023893F55009D91FE /* HabitTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4208B98F23893F55009D91FE /* HabitTableViewCell.xib */; };
-		4208B99323894763009D91FE /* LovelyLinearProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4208B99223894763009D91FE /* LovelyLinearProgressBar.swift */; };
 		42385D192304465A0037E92F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42385D182304465A0037E92F /* AppDelegate.swift */; };
 		42385D1B2304465A0037E92F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42385D1A2304465A0037E92F /* MainViewController.swift */; };
 		42385D202304465B0037E92F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42385D1F2304465B0037E92F /* Assets.xcassets */; };
@@ -18,6 +17,7 @@
 		42385D3323048DB30037E92F /* NibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42385D3223048DB30037E92F /* NibView.swift */; };
 		42385D3523048DD50037E92F /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42385D3423048DD50037E92F /* View.swift */; };
 		42385D3D230496930037E92F /* Habit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42385D3C230496930037E92F /* Habit.swift */; };
+		4269CF7E238B412800ADF9D9 /* LovelyLinearProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4269CF7D238B412800ADF9D9 /* LovelyLinearProgressBar.swift */; };
 		427783CE231A663400FC022A /* HabitTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427783CD231A663400FC022A /* HabitTableViewCell.swift */; };
 		427783D4231A70FE00FC022A /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427783D3231A70FE00FC022A /* UIViewExtension.swift */; };
 		4290491D2349EB6C008039CC /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4290491C2349EB6C008039CC /* CloudKit.framework */; };
@@ -41,7 +41,6 @@
 /* Begin PBXFileReference section */
 		4208B98D23893D46009D91FE /* UITableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
 		4208B98F23893F55009D91FE /* HabitTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HabitTableViewCell.xib; sourceTree = "<group>"; };
-		4208B99223894763009D91FE /* LovelyLinearProgressBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LovelyLinearProgressBar.swift; sourceTree = "<group>"; };
 		42385D152304465A0037E92F /* Habit Tracker by Spikard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Habit Tracker by Spikard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		42385D182304465A0037E92F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		42385D1A2304465A0037E92F /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -52,6 +51,7 @@
 		42385D3223048DB30037E92F /* NibView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibView.swift; sourceTree = "<group>"; };
 		42385D3423048DD50037E92F /* View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		42385D3C230496930037E92F /* Habit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Habit.swift; sourceTree = "<group>"; };
+		4269CF7D238B412800ADF9D9 /* LovelyLinearProgressBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LovelyLinearProgressBar.swift; sourceTree = "<group>"; };
 		427783CD231A663400FC022A /* HabitTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitTableViewCell.swift; sourceTree = "<group>"; };
 		427783D3231A70FE00FC022A /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		4290491B2349EA6A008039CC /* Habit Tracker by Spikard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Habit Tracker by Spikard.entitlements"; sourceTree = "<group>"; };
@@ -97,15 +97,6 @@
 			path = BaseViews;
 			sourceTree = "<group>";
 		};
-		4208B99123894758009D91FE /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				4208B99223894763009D91FE /* LovelyLinearProgressBar.swift */,
-			);
-			name = Views;
-			path = BaseViews/Views;
-			sourceTree = "<group>";
-		};
 		42385D0C2304465A0037E92F = {
 			isa = PBXGroup;
 			children = (
@@ -132,7 +123,7 @@
 				42E9BB6F238AD65900AFDDA8 /* Managers */,
 				42D923D923157C6D002197DA /* Extensions */,
 				4208B98C23893CB7009D91FE /* BaseViews */,
-				4208B99123894758009D91FE /* Views */,
+				4269CF7C238B412800ADF9D9 /* Views */,
 				42385D2A230489F70037E92F /* Modules */,
 				42385D3B2304968B0037E92F /* Models */,
 				42385D2E23048B3B0037E92F /* Resources */,
@@ -184,6 +175,14 @@
 				42385D3C230496930037E92F /* Habit.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		4269CF7C238B412800ADF9D9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4269CF7D238B412800ADF9D9 /* LovelyLinearProgressBar.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		42D923D923157C6D002197DA /* Extensions */ = {
@@ -351,6 +350,7 @@
 			files = (
 				42385D3323048DB30037E92F /* NibView.swift in Sources */,
 				42D923FE2315B6C1002197DA /* UIColorExtension.swift in Sources */,
+				4269CF7E238B412800ADF9D9 /* LovelyLinearProgressBar.swift in Sources */,
 				4208B98E23893D46009D91FE /* UITableViewExtension.swift in Sources */,
 				42385D3523048DD50037E92F /* View.swift in Sources */,
 				42D923DB23157C7E002197DA /* DateExtension.swift in Sources */,
@@ -359,7 +359,6 @@
 				427783D4231A70FE00FC022A /* UIViewExtension.swift in Sources */,
 				42D923DF2315A594002197DA /* FontExtension.swift in Sources */,
 				42385D192304465A0037E92F /* AppDelegate.swift in Sources */,
-				4208B99323894763009D91FE /* LovelyLinearProgressBar.swift in Sources */,
 				42E9BB71238AD66D00AFDDA8 /* AppearanceManager.swift in Sources */,
 				427783CE231A663400FC022A /* HabitTableViewCell.swift in Sources */,
 			);
