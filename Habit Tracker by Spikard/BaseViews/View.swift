@@ -25,6 +25,12 @@ public class View: UIView {
     @IBInspectable public var innerShadowOpacity: Float = 0.2       { didSet { updateInnerShadow() } }
     @IBInspectable public var innerShadowRadius: CGFloat = 3        { didSet { updateInnerShadow() } }
     
+    @IBInspectable var isMaskedCornerRadius     : Bool = false { didSet { updateLayerMask() } }
+    @IBInspectable var roundedTopLeftCorner     : Bool = false { didSet { updateLayerMask() } }
+    @IBInspectable var roundedTopRightCorner    : Bool = false { didSet { updateLayerMask() } }
+    @IBInspectable var roundedBottomLeftCorner  : Bool = false { didSet { updateLayerMask() } }
+    @IBInspectable var roundedBottomRightCorner : Bool = false { didSet { updateLayerMask() } }
+    
     // MARK: - Override methods
     
     override public func layoutSubviews() {
@@ -61,5 +67,19 @@ public class View: UIView {
         innerShadowLayer!.shadowOpacity = innerShadowOpacity
         innerShadowLayer!.shadowRadius = innerShadowRadius
         innerShadowLayer!.cornerRadius = innerShadowLayer!.bounds.width / 2
+    }
+    
+    private func updateLayerMask() {
+        guard isMaskedCornerRadius == true else { return }
+
+        var corners: UIRectCorner = []
+
+        if roundedTopLeftCorner     { corners = corners.union(.topLeft) }
+        if roundedTopRightCorner    { corners = corners.union(.topRight) }
+        if roundedBottomLeftCorner  { corners = corners.union(.bottomLeft) }
+        if roundedBottomRightCorner { corners = corners.union(.bottomRight) }
+        
+        clipsToBounds = true
+        layer.maskedCorners = CACornerMask(rawValue: corners.rawValue)
     }
 }

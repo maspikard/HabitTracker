@@ -13,15 +13,15 @@ public final class LovelyLinearProgressBar: View {
     
     // MARK: - Private properties
     
-    private var trackView: UIView!
-    private var progressView: UIView!
+    private var trackView: View!
+    private var progressView: View!
     
     // MARK: - Public properties
     
     @IBInspectable public var trackColor: UIColor = .clear          { didSet { trackView.backgroundColor = trackColor } }
     @IBInspectable public var progressColor: UIColor = .magenta     { didSet { progressView.backgroundColor = progressColor } }
     @IBInspectable public var trackCornerRadius: CGFloat = 8        { didSet { updateCornerRadius() } }
-    @IBInspectable public var trackBorderWidth: CGFloat = 1         { didSet { trackView.borderWidth = trackBorderWidth } }
+    @IBInspectable public var trackBorderWidth: CGFloat = 0.5       { didSet { trackView.borderWidth = trackBorderWidth } }
     @IBInspectable public var trackBorderColor: UIColor = .magenta  { didSet { trackView.borderColor = trackBorderColor } }
     
     @IBInspectable public var progress: Double = 0.5 { didSet { updateProgress() } }
@@ -56,7 +56,7 @@ public final class LovelyLinearProgressBar: View {
         // track view
         
         if trackView == nil {
-            trackView = UIView()
+            trackView = View()
             addSubview(trackView)
         }
         trackView.frame = CGRect(origin: .zero, size: frame.size)
@@ -64,15 +64,21 @@ public final class LovelyLinearProgressBar: View {
         trackView.borderWidth = trackBorderWidth
         trackView.borderColor = trackBorderColor
         trackView.cornerRadius = trackCornerRadius
+        trackView.isMaskedCornerRadius = true
+        trackView.roundedTopRightCorner = true
+        trackView.roundedBottomRightCorner = true
         
         // progress view
         
         if progressView == nil {
-            progressView = UIView()
+            progressView = View()
             addSubview(progressView)
         }
         progressView.backgroundColor = progressColor
         progressView.cornerRadius = trackCornerRadius
+        progressView.isMaskedCornerRadius = true
+        progressView.roundedTopRightCorner = true
+        progressView.roundedBottomRightCorner = true
         
         // update progress
         

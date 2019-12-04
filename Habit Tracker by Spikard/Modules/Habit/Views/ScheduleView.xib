@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ScheduleView" customModule="Habit_Tracker_by_Spikard" customModuleProvider="target">
+            <connections>
+                <outlet property="daysStackView" destination="ZjS-Il-FWz" id="xRW-Jn-g4P"/>
+                <outlet property="daysSubCategoryButton" destination="fBM-jk-hm9" id="u1c-XR-hFA"/>
+                <outlet property="nextButton" destination="qps-0R-w3V" id="rIW-Tu-M1R"/>
+                <outlet property="periodicityCollectionView" destination="Lcc-cl-ybp" id="PAq-o1-qU7"/>
+                <outlet property="periodicitySubCategoryButton" destination="ofD-lF-6Js" id="LM2-0A-dzQ"/>
+                <outlet property="prevButton" destination="8dt-kn-KQH" id="6vc-bY-5xl"/>
+                <outlet property="scheduleCategoryContainerView" destination="a1C-tq-YnA" id="jrR-Py-Aje"/>
+                <outlet property="scheduleCategoryLabel" destination="RyP-1R-x9S" id="QG5-Ws-DoH"/>
+                <outlet property="scheduleStackView" destination="lTq-kc-XBe" id="dxu-mL-TLd"/>
+                <outlet property="scheduleSubCategoryContainerView" destination="Qx0-QL-lLR" id="ECk-Vz-IX4"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="290"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="lTq-kc-XBe">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="290"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a1C-tq-YnA">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EVERY DAY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RyP-1R-x9S">
+                                    <rect key="frame" x="149" y="16.5" width="77" height="17"/>
+                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                    <color key="textColor" name="MainBackgroundReversedColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qps-0R-w3V">
+                                    <rect key="frame" x="335" y="9" width="32" height="32"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="32" id="6co-up-VlE"/>
+                                        <constraint firstAttribute="width" secondItem="qps-0R-w3V" secondAttribute="height" multiplier="1:1" id="mic-Ft-DhM"/>
+                                    </constraints>
+                                    <color key="tintColor" name="MainBackgroundReversedColor"/>
+                                    <state key="normal" image="NextArrow"/>
+                                    <connections>
+                                        <action selector="nextScheduleCategoryButtonTapped:" destination="-1" eventType="touchUpInside" id="VeH-6J-h9r"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8dt-kn-KQH">
+                                    <rect key="frame" x="8" y="9" width="32" height="32"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="8dt-kn-KQH" secondAttribute="height" multiplier="1:1" id="ndb-iG-G3T"/>
+                                        <constraint firstAttribute="width" constant="32" id="yCG-jx-lnH"/>
+                                    </constraints>
+                                    <color key="tintColor" name="MainBackgroundReversedColor"/>
+                                    <state key="normal" image="NextArrow"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="rotate">
+                                            <real key="value" value="180"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="prevScheduleCategoryButtonTapped:" destination="-1" eventType="touchUpInside" id="yJR-HY-z6A"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="RyP-1R-x9S" firstAttribute="centerY" secondItem="a1C-tq-YnA" secondAttribute="centerY" id="7T9-xR-5jM"/>
+                                <constraint firstAttribute="trailing" secondItem="qps-0R-w3V" secondAttribute="trailing" constant="8" id="RxZ-kd-7Lf"/>
+                                <constraint firstItem="8dt-kn-KQH" firstAttribute="centerY" secondItem="a1C-tq-YnA" secondAttribute="centerY" id="Uid-1P-nkE"/>
+                                <constraint firstItem="RyP-1R-x9S" firstAttribute="centerX" secondItem="a1C-tq-YnA" secondAttribute="centerX" id="dOb-x1-2UW"/>
+                                <constraint firstAttribute="height" constant="50" id="eU4-SX-LSt"/>
+                                <constraint firstItem="qps-0R-w3V" firstAttribute="centerY" secondItem="a1C-tq-YnA" secondAttribute="centerY" id="mtk-7r-9dR"/>
+                                <constraint firstItem="8dt-kn-KQH" firstAttribute="leading" secondItem="a1C-tq-YnA" secondAttribute="leading" constant="8" id="vdR-xN-jQX"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qx0-QL-lLR">
+                            <rect key="frame" x="0.0" y="60" width="375" height="50"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="3MQ-Zp-Cc5">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fBM-jk-hm9">
+                                            <rect key="frame" x="0.0" y="0.0" width="187.5" height="50"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
+                                            <state key="normal" title="DAYS OF THE WEEK">
+                                                <color key="titleColor" name="MainBackgroundReversedColor"/>
+                                            </state>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="25"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="daysSubCategoryButtonTapped:" destination="-1" eventType="touchUpInside" id="36n-N7-yzX"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ofD-lF-6Js">
+                                            <rect key="frame" x="187.5" y="0.0" width="187.5" height="50"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
+                                            <state key="normal" title="PERIODICITY">
+                                                <color key="titleColor" name="MainBackgroundReversedColor"/>
+                                            </state>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="25"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="periodicitySubCategoryButtonTapped:" destination="-1" eventType="touchUpInside" id="PcV-fM-h5f"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="3MQ-Zp-Cc5" secondAttribute="bottom" id="4qS-4H-bpj"/>
+                                <constraint firstItem="3MQ-Zp-Cc5" firstAttribute="top" secondItem="Qx0-QL-lLR" secondAttribute="top" id="A5O-jr-cYt"/>
+                                <constraint firstItem="3MQ-Zp-Cc5" firstAttribute="leading" secondItem="Qx0-QL-lLR" secondAttribute="leading" id="K7a-eo-i51"/>
+                                <constraint firstAttribute="height" constant="50" id="VfO-D5-aT1"/>
+                                <constraint firstAttribute="trailing" secondItem="3MQ-Zp-Cc5" secondAttribute="trailing" id="uTv-k4-thG"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="25"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                    <real key="value" value="0.14999999999999999"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                    <real key="value" value="4"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                    <size key="value" width="0.0" height="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                    <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="ZjS-Il-FWz">
+                            <rect key="frame" x="0.0" y="120" width="375" height="50"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="idl-Zy-hEy">
+                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="idl-Zy-hEy" secondAttribute="height" multiplier="1:1" id="Ozt-1O-0eK"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                                    <state key="normal" title="MON">
+                                        <color key="titleColor" name="MainBackgroundReversedColor"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="8"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uEl-11-K2g">
+                                    <rect key="frame" x="54" y="0.0" width="50" height="50"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="uEl-11-K2g" secondAttribute="height" multiplier="1:1" id="zN0-i8-bsP"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                                    <state key="normal" title="TUE">
+                                        <color key="titleColor" name="MainBackgroundReversedColor"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="8"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rg5-89-QPH">
+                                    <rect key="frame" x="108.5" y="0.0" width="50" height="50"/>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                                    <state key="normal" title="WED">
+                                        <color key="titleColor" name="MainBackgroundReversedColor"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="8"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cHo-mt-sMI">
+                                    <rect key="frame" x="162.5" y="0.0" width="50" height="50"/>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                                    <state key="normal" title="THU">
+                                        <color key="titleColor" name="MainBackgroundReversedColor"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="8"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fXP-J1-iAq">
+                                    <rect key="frame" x="216.5" y="0.0" width="50" height="50"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="fXP-J1-iAq" secondAttribute="height" multiplier="1:1" id="mr9-Rh-MYZ"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                                    <state key="normal" title="FRI">
+                                        <color key="titleColor" name="MainBackgroundReversedColor"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="8"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kNh-hv-19b">
+                                    <rect key="frame" x="271" y="0.0" width="50" height="50"/>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                                    <state key="normal" title="SAT">
+                                        <color key="titleColor" name="MainBackgroundReversedColor"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="8"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6PB-Z4-yG9">
+                                    <rect key="frame" x="325" y="0.0" width="50" height="50"/>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                                    <state key="normal" title="SUN">
+                                        <color key="titleColor" name="MainBackgroundReversedColor"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="8"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="Ivx-l4-rC3"/>
+                                <constraint firstItem="cHo-mt-sMI" firstAttribute="width" secondItem="cHo-mt-sMI" secondAttribute="height" multiplier="1:1" id="MBf-Z0-tFP"/>
+                                <constraint firstItem="6PB-Z4-yG9" firstAttribute="width" secondItem="6PB-Z4-yG9" secondAttribute="height" multiplier="1:1" id="bHb-mn-q3S"/>
+                                <constraint firstItem="rg5-89-QPH" firstAttribute="width" secondItem="rg5-89-QPH" secondAttribute="height" multiplier="1:1" id="hrL-Yb-q6o"/>
+                                <constraint firstItem="kNh-hv-19b" firstAttribute="width" secondItem="kNh-hv-19b" secondAttribute="height" multiplier="1:1" id="mXg-qP-ebC"/>
+                            </constraints>
+                        </stackView>
+                        <collectionView multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Lcc-cl-ybp">
+                            <rect key="frame" x="0.0" y="180" width="375" height="110"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="110" id="BHo-2u-YLp"/>
+                            </constraints>
+                            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ues-CO-bkb">
+                                <size key="itemSize" width="50" height="50"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="columns">
+                                        <integer key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </collectionViewFlowLayout>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="aR4-iu-Dae"/>
+                                <outlet property="delegate" destination="-1" id="JBC-Vi-LP3"/>
+                            </connections>
+                        </collectionView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="lTq-kc-XBe" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="md2-2f-oZU"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="lTq-kc-XBe" secondAttribute="trailing" id="tr7-I0-bdO"/>
+                <constraint firstItem="lTq-kc-XBe" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="xSz-x1-OHW"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="138.40000000000001" y="131.33433283358323"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="NextArrow" width="256" height="256"/>
+        <namedColor name="MainBackgroundReversedColor">
+            <color red="0.18431372549019609" green="0.21176470588235294" blue="0.25098039215686274" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

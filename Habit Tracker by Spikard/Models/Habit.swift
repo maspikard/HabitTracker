@@ -7,20 +7,35 @@
 //
 
 import UIKit
+import CloudKit
 
-class Habit {
+final class Habit: CKModel {
     
-    var progress: CGFloat = 0.0
+    static var recordType: String = "Habits"
     
-    init(progress: CGFloat) {
+    var name: String
+    var progress: CGFloat
+    
+    var record: CKRecord {
+        let record = CKRecord(recordType: Habit.recordType)
+        record.setObject(name as NSString, forKey: "name")
+        return record
+    }
+    
+    init(name: String, progress: CGFloat = 0.0) {
+        self.name = name
         self.progress = progress
     }
     
-    var progressDiff: CGFloat {
-        return 0.05
+    convenience init(with record: CKRecord) {
+        self.init(name: (record.value(forKey: "name") as? String) ?? "")
     }
     
-    func updateProgress(test: Bool) {
-        progress += progressDiff
-    }
+//    var progressDiff: CGFloat {
+//        return 0.05
+//    }
+//
+//    func updateProgress(test: Bool) {
+//        progress += progressDiff
+//    }
 }

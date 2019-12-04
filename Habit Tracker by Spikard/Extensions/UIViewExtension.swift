@@ -47,7 +47,7 @@ extension UIView {
     }
     
     @IBInspectable var rotate: CGFloat {
-        set { transform = CGAffineTransform(rotationAngle: newValue * .pi/180) }
+        set { transform = CGAffineTransform(rotationAngle: newValue * .pi / 180) }
         get { return 0 }
     }
     
@@ -68,7 +68,6 @@ extension UIView {
     func findConstraintInSuperview(type: NSLayoutConstraint.Attribute) -> NSLayoutConstraint? {
         if let superview = superview {
             for constraint in superview.constraints {
-                
                 let isFirstItemIsSelf = (constraint.firstItem as? UIView) == self
                 let isSecondItemIsSelf = (constraint.secondItem as? UIView) == self
                 let isConstraintAssociatedWithSelf = (isFirstItemIsSelf || isSecondItemIsSelf)
@@ -78,7 +77,6 @@ extension UIView {
                 }
             }
         }
-        
         return nil
     }
 }

@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="70" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hny-4Y-HjM">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="106" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hny-4Y-HjM">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="778"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <view key="tableHeaderView" contentMode="scaleToFill" id="VaS-xa-nz9">
@@ -58,7 +58,11 @@
                         <viewLayoutGuide key="safeArea" id="19U-rN-bJN"/>
                     </view>
                     <navigationItem key="navigationItem" title="Habits" id="0O5-GC-czK">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="HMR-XL-Awp"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="HMR-XL-Awp">
+                            <connections>
+                                <segue destination="j90-o6-glB" kind="show" identifier="TestSegue" id="p1b-uH-jiL"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="hny-4Y-HjM" id="OaO-Fj-TaO"/>
@@ -67,6 +71,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YxR-Xy-TSV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1670" y="-124"/>
+        </scene>
+        <!--Habit-->
+        <scene sceneID="p24-4A-SCS">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Habit" id="j90-o6-glB" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="PPb-Yv-PVk"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BHY-9e-bni" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2174" y="-124"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="DHy-FR-mbO">
@@ -90,7 +104,7 @@
     </scenes>
     <resources>
         <namedColor name="MainBackgroundColor">
-            <color red="0.94901960784313721" green="0.95686274509803926" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.98039215686274506" green="0.98431372549019602" blue="0.99215686274509807" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

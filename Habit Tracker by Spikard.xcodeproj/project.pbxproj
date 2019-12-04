@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4205C2FB23956FEA00B80FE4 /* CollectionViewColumnsFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4205C2FA23956FEA00B80FE4 /* CollectionViewColumnsFlowLayout.swift */; };
+		4205C2FE2395734900B80FE4 /* PeriodicityCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4205C2FC2395734900B80FE4 /* PeriodicityCollectionViewCell.swift */; };
+		4205C2FF2395734900B80FE4 /* PeriodicityCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4205C2FD2395734900B80FE4 /* PeriodicityCollectionViewCell.xib */; };
+		4205C302239575D800B80FE4 /* UICollectionViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4205C301239575D800B80FE4 /* UICollectionViewExtension.swift */; };
 		4208B98E23893D46009D91FE /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4208B98D23893D46009D91FE /* UITableViewExtension.swift */; };
 		4208B99023893F55009D91FE /* HabitTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4208B98F23893F55009D91FE /* HabitTableViewCell.xib */; };
 		42385D192304465A0037E92F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42385D182304465A0037E92F /* AppDelegate.swift */; };
@@ -17,10 +21,18 @@
 		42385D3323048DB30037E92F /* NibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42385D3223048DB30037E92F /* NibView.swift */; };
 		42385D3523048DD50037E92F /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42385D3423048DD50037E92F /* View.swift */; };
 		42385D3D230496930037E92F /* Habit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42385D3C230496930037E92F /* Habit.swift */; };
+		425D6C0323927DA900937962 /* CloudKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425D6C0223927DA900937962 /* CloudKitManager.swift */; };
+		425D6C052392911B00937962 /* CKModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425D6C042392911B00937962 /* CKModel.swift */; };
+		425D6C0823929A6600937962 /* Habit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 425D6C0723929A6600937962 /* Habit.storyboard */; };
+		425D6C0A23929ACC00937962 /* HabitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425D6C0923929ACC00937962 /* HabitViewController.swift */; };
 		4269CF7E238B412800ADF9D9 /* LovelyLinearProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4269CF7D238B412800ADF9D9 /* LovelyLinearProgressBar.swift */; };
 		427783CE231A663400FC022A /* HabitTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427783CD231A663400FC022A /* HabitTableViewCell.swift */; };
 		427783D4231A70FE00FC022A /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427783D3231A70FE00FC022A /* UIViewExtension.swift */; };
 		4290491D2349EB6C008039CC /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4290491C2349EB6C008039CC /* CloudKit.framework */; };
+		429F53D923944A8A0032576B /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429F53D823944A8A0032576B /* ImageView.swift */; };
+		42A8420223953B0D001FC8BC /* ScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A8420123953B0D001FC8BC /* ScheduleView.swift */; };
+		42A8420423953B1C001FC8BC /* ScheduleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42A8420323953B1C001FC8BC /* ScheduleView.xib */; };
+		42A842062395683B001FC8BC /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A842052395683B001FC8BC /* TextField.swift */; };
 		42D923DB23157C7E002197DA /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D923DA23157C7E002197DA /* DateExtension.swift */; };
 		42D923DF2315A594002197DA /* FontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D923DE2315A594002197DA /* FontExtension.swift */; };
 		42D923EE2315A6DB002197DA /* SF-Pro-Text-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 42D923E12315A6DA002197DA /* SF-Pro-Text-Semibold.otf */; };
@@ -39,6 +51,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4205C2FA23956FEA00B80FE4 /* CollectionViewColumnsFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewColumnsFlowLayout.swift; sourceTree = "<group>"; };
+		4205C2FC2395734900B80FE4 /* PeriodicityCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeriodicityCollectionViewCell.swift; sourceTree = "<group>"; };
+		4205C2FD2395734900B80FE4 /* PeriodicityCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PeriodicityCollectionViewCell.xib; sourceTree = "<group>"; };
+		4205C301239575D800B80FE4 /* UICollectionViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICollectionViewExtension.swift; sourceTree = "<group>"; };
 		4208B98D23893D46009D91FE /* UITableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
 		4208B98F23893F55009D91FE /* HabitTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HabitTableViewCell.xib; sourceTree = "<group>"; };
 		42385D152304465A0037E92F /* Habit Tracker by Spikard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Habit Tracker by Spikard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,11 +67,19 @@
 		42385D3223048DB30037E92F /* NibView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibView.swift; sourceTree = "<group>"; };
 		42385D3423048DD50037E92F /* View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		42385D3C230496930037E92F /* Habit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Habit.swift; sourceTree = "<group>"; };
+		425D6C0223927DA900937962 /* CloudKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitManager.swift; sourceTree = "<group>"; };
+		425D6C042392911B00937962 /* CKModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKModel.swift; sourceTree = "<group>"; };
+		425D6C0723929A6600937962 /* Habit.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Habit.storyboard; sourceTree = "<group>"; };
+		425D6C0923929ACC00937962 /* HabitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitViewController.swift; sourceTree = "<group>"; };
 		4269CF7D238B412800ADF9D9 /* LovelyLinearProgressBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LovelyLinearProgressBar.swift; sourceTree = "<group>"; };
 		427783CD231A663400FC022A /* HabitTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitTableViewCell.swift; sourceTree = "<group>"; };
 		427783D3231A70FE00FC022A /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		4290491B2349EA6A008039CC /* Habit Tracker by Spikard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Habit Tracker by Spikard.entitlements"; sourceTree = "<group>"; };
 		4290491C2349EB6C008039CC /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		429F53D823944A8A0032576B /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
+		42A8420123953B0D001FC8BC /* ScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleView.swift; sourceTree = "<group>"; };
+		42A8420323953B1C001FC8BC /* ScheduleView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScheduleView.xib; sourceTree = "<group>"; };
+		42A842052395683B001FC8BC /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
 		42D923DA23157C7E002197DA /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 		42D923DE2315A594002197DA /* FontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontExtension.swift; sourceTree = "<group>"; };
 		42D923E12315A6DA002197DA /* SF-Pro-Text-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Semibold.otf"; sourceTree = "<group>"; };
@@ -88,10 +112,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4205C2F923956FD900B80FE4 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				4205C2FA23956FEA00B80FE4 /* CollectionViewColumnsFlowLayout.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		4205C3002395756400B80FE4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				42A8420123953B0D001FC8BC /* ScheduleView.swift */,
+				42A8420323953B1C001FC8BC /* ScheduleView.xib */,
+				4205C2FC2395734900B80FE4 /* PeriodicityCollectionViewCell.swift */,
+				4205C2FD2395734900B80FE4 /* PeriodicityCollectionViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		4208B98C23893CB7009D91FE /* BaseViews */ = {
 			isa = PBXGroup;
 			children = (
 				42385D3423048DD50037E92F /* View.swift */,
+				429F53D823944A8A0032576B /* ImageView.swift */,
+				42A842052395683B001FC8BC /* TextField.swift */,
 				42385D3223048DB30037E92F /* NibView.swift */,
 			);
 			path = BaseViews;
@@ -124,6 +169,7 @@
 				42D923D923157C6D002197DA /* Extensions */,
 				4208B98C23893CB7009D91FE /* BaseViews */,
 				4269CF7C238B412800ADF9D9 /* Views */,
+				4205C2F923956FD900B80FE4 /* Classes */,
 				42385D2A230489F70037E92F /* Modules */,
 				42385D3B2304968B0037E92F /* Models */,
 				42385D2E23048B3B0037E92F /* Resources */,
@@ -135,6 +181,7 @@
 			isa = PBXGroup;
 			children = (
 				42385D2B23048A460037E92F /* Main */,
+				425D6C06239299CF00937962 /* Habit */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -144,7 +191,7 @@
 			children = (
 				42385D1A2304465A0037E92F /* MainViewController.swift */,
 				42385D2C23048B2E0037E92F /* Main.storyboard */,
-				42385D38230496030037E92F /* Cells */,
+				42385D38230496030037E92F /* Views */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -160,21 +207,32 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		42385D38230496030037E92F /* Cells */ = {
+		42385D38230496030037E92F /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				427783CD231A663400FC022A /* HabitTableViewCell.swift */,
 				4208B98F23893F55009D91FE /* HabitTableViewCell.xib */,
 			);
-			path = Cells;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		42385D3B2304968B0037E92F /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				425D6C042392911B00937962 /* CKModel.swift */,
 				42385D3C230496930037E92F /* Habit.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		425D6C06239299CF00937962 /* Habit */ = {
+			isa = PBXGroup;
+			children = (
+				425D6C0923929ACC00937962 /* HabitViewController.swift */,
+				425D6C0723929A6600937962 /* Habit.storyboard */,
+				4205C3002395756400B80FE4 /* Views */,
+			);
+			path = Habit;
 			sourceTree = "<group>";
 		};
 		4269CF7C238B412800ADF9D9 /* Views */ = {
@@ -193,6 +251,7 @@
 				42D923DE2315A594002197DA /* FontExtension.swift */,
 				42D923FD2315B6C1002197DA /* UIColorExtension.swift */,
 				4208B98D23893D46009D91FE /* UITableViewExtension.swift */,
+				4205C301239575D800B80FE4 /* UICollectionViewExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -218,6 +277,7 @@
 			isa = PBXGroup;
 			children = (
 				42E9BB70238AD66D00AFDDA8 /* AppearanceManager.swift */,
+				425D6C0223927DA900937962 /* CloudKitManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -299,16 +359,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				425D6C0823929A6600937962 /* Habit.storyboard in Resources */,
 				42D923EF2315A6DB002197DA /* SF-Pro-Display-Light.otf in Resources */,
 				42D923EE2315A6DB002197DA /* SF-Pro-Text-Semibold.otf in Resources */,
 				42D923FA2315A6DB002197DA /* SF-Pro-Display-Bold.otf in Resources */,
 				4208B99023893F55009D91FE /* HabitTableViewCell.xib in Resources */,
+				42A8420423953B1C001FC8BC /* ScheduleView.xib in Resources */,
 				42D923F42315A6DB002197DA /* SF-Pro-Text-Light.otf in Resources */,
 				42385D232304465B0037E92F /* LaunchScreen.storyboard in Resources */,
 				42385D202304465B0037E92F /* Assets.xcassets in Resources */,
 				42385D2D23048B2E0037E92F /* Main.storyboard in Resources */,
 				42D923F52315A6DB002197DA /* SF-Pro-Text-Regular.otf in Resources */,
 				42D923F22315A6DB002197DA /* SF-Pro-Display-Regular.otf in Resources */,
+				4205C2FF2395734900B80FE4 /* PeriodicityCollectionViewCell.xib in Resources */,
 				42D923F32315A6DB002197DA /* SF-Pro-Display-Semibold.otf in Resources */,
 				42D923F62315A6DB002197DA /* SF-Pro-Text-Medium.otf in Resources */,
 				42D923F12315A6DB002197DA /* SF-Pro-Text-Bold.otf in Resources */,
@@ -348,13 +411,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4205C302239575D800B80FE4 /* UICollectionViewExtension.swift in Sources */,
 				42385D3323048DB30037E92F /* NibView.swift in Sources */,
+				4205C2FE2395734900B80FE4 /* PeriodicityCollectionViewCell.swift in Sources */,
 				42D923FE2315B6C1002197DA /* UIColorExtension.swift in Sources */,
 				4269CF7E238B412800ADF9D9 /* LovelyLinearProgressBar.swift in Sources */,
+				42A8420223953B0D001FC8BC /* ScheduleView.swift in Sources */,
+				429F53D923944A8A0032576B /* ImageView.swift in Sources */,
 				4208B98E23893D46009D91FE /* UITableViewExtension.swift in Sources */,
+				425D6C0323927DA900937962 /* CloudKitManager.swift in Sources */,
+				425D6C0A23929ACC00937962 /* HabitViewController.swift in Sources */,
+				425D6C052392911B00937962 /* CKModel.swift in Sources */,
 				42385D3523048DD50037E92F /* View.swift in Sources */,
 				42D923DB23157C7E002197DA /* DateExtension.swift in Sources */,
+				42A842062395683B001FC8BC /* TextField.swift in Sources */,
 				42385D3D230496930037E92F /* Habit.swift in Sources */,
+				4205C2FB23956FEA00B80FE4 /* CollectionViewColumnsFlowLayout.swift in Sources */,
 				42385D1B2304465A0037E92F /* MainViewController.swift in Sources */,
 				427783D4231A70FE00FC022A /* UIViewExtension.swift in Sources */,
 				42D923DF2315A594002197DA /* FontExtension.swift in Sources */,
